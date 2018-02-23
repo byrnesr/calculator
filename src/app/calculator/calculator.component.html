@@ -1,0 +1,75 @@
+  <div class="row">
+    <div class="running-calculation">
+      <label>{{ runningCalculation }}</label>
+    </div>
+  </div>
+  <div class="row">
+    <input type="text" ngModel="display" value="{{ display }}">
+  </div>
+  <div class="row">
+    <div class="col-xs">
+      <button (click)="operationClick('CE')" type="button" class="btn btn-default">CE</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="operationClick('C')" type="button" class="btn btn-default">C</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="operationClick('<')" type="button" class="btn btn-default"><span>&#8592;</span></button>
+    </div>
+    <div class="col-xs">
+      <button (click)="operationClick('/')" type="button" class="btn btn-default"><span>&#247;</span></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs">
+      <button (click)="numberClick(7)" type="button" class="btn btn-default">7</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(8)" type="button" class="btn btn-default">8</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(9)" type="button" class="btn btn-default">9</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="operationClick('*')" type="button" class="btn btn-default"><span>&#215;</span></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs">
+      <button (click)="numberClick(4)" type="button" class="btn btn-default">4</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(5)" type="button" class="btn btn-default">5</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(6)" type="button" class="btn btn-default">6</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="operationClick('-')" type="button" class="btn btn-default"><span>&#8722;</span></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs">
+      <button (click)="numberClick(1)" type="button" class="btn btn-default">1</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(2)" type="button" class="btn btn-default">2</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(3)" type="button" class="btn btn-default">3</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="operationClick('+')" type="button" class="btn btn-default"><span>&#43;</span></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs">
+      <button (click)="operationClick('+/-')" type="button" class="btn btn-default">&#177;</button>
+    </div>
+    <div class="col-xs">
+      <button (click)="numberClick(0)" type="button" class="btn btn-default">0</button>
+    </div>
+    <div class="col-xs equals">
+      <button (click)="operationClick('=')" type="button" class="btn btn-outline-secondary"><span>&#61;</span></button>
+    </div>
+  </div>

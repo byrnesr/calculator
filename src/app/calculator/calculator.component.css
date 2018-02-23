@@ -1,0 +1,23 @@
+button {
+  width: 4em;
+  border-color: black;
+}
+input {
+  width: 16em;
+  text-align: right;
+  border-radius: 5px;
+}
+.running-calculation label {
+  width: 16em;
+  text-align: right;
+}
+
+.running-calculation {
+  min-height: 2em;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.equals button{
+  width: 8em;
+}
